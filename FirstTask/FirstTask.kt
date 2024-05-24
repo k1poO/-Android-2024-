@@ -5,6 +5,7 @@ fun main() {
     println("Дублированный элемент: $duplicate")
 }
 
+//Функция для поиска дубликатов
 private fun findDuplicate(array: IntArray): Int {
     val n = array.size - 1
     val expectedSum = n * (n + 1) / 2
@@ -12,6 +13,7 @@ private fun findDuplicate(array: IntArray): Int {
     return actualSum - expectedSum
 }
 
+//Функция для создания массива с дубликатом
 private fun createArrayWithDuplicate(): IntArray {
     val n = 100
     val arr = IntArray(n + 1) { it + 1 }
